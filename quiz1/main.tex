@@ -1,0 +1,176 @@
+
+  
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}[section]
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\raggedbottom
+\setlength{\parindent}{0pt}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\vert#1\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\lVert#1\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E[ #1 ]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{QUIZ1}
+\author{Adarsh Sai - AI20BTECH11001}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/Adarsh541/EE3900/blob/main/quiz1/codes/quiz1.py
+\end{lstlisting}
+
+%
+Download latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/Adarsh541/EE3900/blob/main/quiz1/quiz1.tex
+\end{lstlisting}
+\section{Problem(Q2.26)}
+Which of the following discrete time signals could be the eigenfunctions of stable LTI system?
+\begin{enumerate}
+    \item $5^n$
+    \item $5^ne^{j2\omega n}$
+\end{enumerate}
+\section{Solution}
+If $x\sbrak{n}$ is an eigenfunction of the system, then the output signal must be a scaled version of the input signal: $y\sbrak{n}=c.x\sbrak{n}$
+\begin{enumerate}
+    \item \begin{align}
+        y\sbrak{n}&=\sum_{k=-\infty}^{\infty}h\sbrak{k}x\sbrak{n-k}\\
+        &=\sum_{k=-\infty}^{\infty}h\sbrak{k}5^{n-k}\\
+        &=5^n\sum_{k=-\infty}^{\infty}h\sbrak{k}5^{-k}\\
+    &= c_{1}.x\sbrak{n}
+    \end{align}
+    where $c_1=\sum_{k=-\infty}^{\infty}h\sbrak{k}5^{-k}$ is the corresponding eigen value.
+    $\therefore $ $5^n$ can be an eigenfunction.
+    \item \begin{align}
+         y\sbrak{n}&=\sum_{k=-\infty}^{\infty}h\sbrak{k}x\sbrak{n-k}\\
+        &=\sum_{k=-\infty}^{\infty}h\sbrak{k}5^{n-k}e^{j2\omega(n-k)}\\
+        &=5^ne^{j2\omega n}\sum_{k=-\infty}^{\infty}h\sbrak{k}5^{-k}e^{-j2\omega k}\\
+    &= c_{2}.x\sbrak{n}
+    \end{align}
+    where $c_2=\sum_{k=-\infty}^{\infty}h\sbrak{k}5^{-k}e^{-j2\omega k}$ is the corresponding eigen value.
+    $\therefore $ $5^ne^{j2\omega n}$ can be an eigenfunction.
+\end{enumerate}
+\begin{figure}[!h]
+ \centering
+ \includegraphics[width=\columnwidth]{xn.png}
+ \caption{Plot of $x[n]=5^n$.} 
+\end{figure}
+\begin{figure}[!h]
+ \centering
+ \includegraphics[width=\columnwidth]{yn.png}
+ \caption{Plot of $y[n]$. Took $h[n]=u[n]$. We get $c_1=1.25$. Verified in python.} 
+\end{figure}
+\end{document}
+
