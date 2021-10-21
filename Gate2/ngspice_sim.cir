@@ -1,0 +1,22 @@
+d
+.include LF356.MOD
+v1 2 0 EXP(0 1 0 0 0 0.5)
+r1 1 0 100
+r2 2 3 200
+r3 4 0 100
+l1 1 2 100
+l2 3 4 100
+xu1 5 6 7 8 9 LF356/NS
+vp 7 0 dc 25v
+vm 8 0 dc -25v
+vin+ 5 0 0
+r4 4 6 1000
+r5 1 6 1000
+r6 6 9 1000
+.tran 0.0001 4
+.control
+run
+plot v(2) (-v(9))
+hardcopy xyPlot.ps v(2) (-v(9))
+.endc
+.end
